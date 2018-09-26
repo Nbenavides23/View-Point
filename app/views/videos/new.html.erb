@@ -1,5 +1,9 @@
-<h1 class"new_video">New Video</h1>
 
+<div class="title">
+        <h1>New Video</h1>
+</div>
+<div class="ui text container">
 <%= render 'form', video: @video %>
 
-<%= link_to 'Back', videos_path %>
+<button class="ui blue basic button"><%= link_to 'Back', videos_path %></button>
+</div>

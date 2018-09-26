@@ -3,8 +3,32 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .video {
-    margin-top: 200px;
+    margin-top: 400px;
     height: 300px;
     width: 300px;
+    margin-left: 200px;
+}
+.new_video {
+    margin-top: 1000px;
+}
+.table_new {
+    margin-top: 60px;
+}
+.title {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 400px;
 }
 
+.ui.text.container{
+  
+    width: 200px;
+    height: 300px;
+    border: 3px solid black;
+}
+
+.path {
+    margin-top: -10px;
+
+}

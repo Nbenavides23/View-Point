@@ -1,22 +1,27 @@
 <p id="notice"><%= notice %></p>
+<div class="title">
+    <h1>Videos</h1>
+</div>
+<div class="table_new">
+  <button class="ui blue basic button"><%= link_to 'New Video', new_video_path %></button>
+<div>
 
-<h1>Videos</h1>
-
-<table>
-  <thead> 
+  <tbody>
+  <table class="ui celled table">
+  <thead>
     <tr>
       <th>Title</th>
       <th>Description</th>
-      <th colspan="3"></th>
+      <th>Show Video </th>
+      <th>Edit Video</th>
+      <th>Destroy Video</th>
     </tr>
   </thead>
-
-  <tbody>
     <% @videos.each do |video| %>
       <tr>
         <td><%= video.title %></td>
         <td><%= video.description %></td>
-        <td><%= link_to 'Show', video %></td>
+        <td><%= link_to 'Show', "/videos/#{video.id}" %></td>
         <td><%= link_to 'Edit', edit_video_path(video) %></td>
         <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -26,4 +31,7 @@
 
 <br>
 
-<%= link_to 'New Video', new_video_path %>
+
+
+
+  

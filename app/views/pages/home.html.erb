@@ -64,6 +64,35 @@
 
 <% else %>
 
+<div class="title">
+<h1> Instructor add videos</h1>
+</div>
+<div class="table_new">
+  <button class="ui blue basic button"><%= link_to 'New Video', new_video_path %></button>
+<div>
+<div class="ui clearing divider"></div>
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Show Video </th>
+      <th>Edit Video</th>
+      <th>Destroy Video</th>
+    </tr>
+  </thead>
+    <% @videos.each do |video| %>
+      <tr>
+        <td><%= video.title %></td>
+        <td><%= video.description %></td>
+        <td><%= link_to 'Show', "/videos/#{video.id}" %></td>
+        <td><%= link_to 'Edit', edit_video_path(video) %></td>
+        <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
 <div class="ui four cards">
   <div class="card">
     <div class="image">
@@ -80,6 +109,9 @@
     <div class="image">
       <img src="https://images.unsplash.com/photo-1521020773588-3b28297b1e70?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e0973395dd1655ea3b8fb83fa95c02c2&auto=format&fit=crop&w=2369&q=80">
     </div>
+    <p class="banking"><h5>Pre-Investing: Before Investing in Real Estate</h5></p>
+    <p>What Future Real Estate Investors MUST Know Before Making Their 1st Investment</p>
+
     <div class="extra">
       Rating:
       <div class="ui star rating" data-rating="2"></div>
@@ -89,6 +121,8 @@
     <div class="image">
       <img src="https://images.unsplash.com/photo-1530167916256-8ed31153f4b0?ixlib=rb-0.3.5&s=679e5b7afa6de4fbf847152e35d6e2f4&auto=format&fit=crop&w=1950&q=80">
     </div>
+    <p class="banking"><h5>How to Analyze Multifamily Investment Opportunities</h5></p>
+    <p>Learn professional techniques and use investment grade models to evaluate and analyze multifamily investment deals</p>
     <div class="extra">
       Rating:
       <div class="ui star rating" data-rating="3"></div>
@@ -98,6 +132,8 @@
     <div class="image">
       <img src="https://images.unsplash.com/photo-1518687560396-172a78aec156?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6ddc031f92185a88d4d1f3b7d5cb57&auto=format&fit=crop&w=2321&q=80">
     </div>
+    <p class="banking"><h5>The Property Cycle: How To Identify The Best Time To Invest</h5></p>
+    <p>Discover How The Property Market Works And The Cutting-Edge Strategies That Will Allow You Ride The Cycle Profitably</p>
     <div class="extra">
       Rating:
       <div class="ui star rating" data-rating="4"></div>
@@ -107,6 +143,8 @@
     <div class="image">
       <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=14cc613995f60d89c4a908f3ea5c2409&auto=format&fit=crop&w=2274&q=80">
     </div>
+    <p class="banking"><h5>How To Build A Real Estate Cash Buyers List</h5></p>
+    <p>Your nuts-and-bolts guide to creating the most valuable asset to your Real Estate business: Your Buyers List!</p>
     <div class="extra">
       Rating:
       <div class="ui star rating" data-rating="3"></div>
@@ -116,6 +154,8 @@
     <div class="image">
       <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-0.3.5&s=d8791fe0f9f4e735158400f9daf6a558&auto=format&fit=crop&w=1602&q=80" >
     </div>
+    <p class="banking"><h5>The Real Estate Equity Waterfall Modeling Master Class</h5></p>
+    <p>The Complete Guide To Building Dynamic Real Estate Equity Waterfall Models In Microsoft Excet</p>
     <div class="extra">
       Rating:
       <div class="ui star rating" data-rating="3"></div>
@@ -125,6 +165,8 @@
     <div class="image">
       <img src="https://images.unsplash.com/photo-1536917570556-14ebac23ddf4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea5877729a8ccedbf3ff10ea0292bd9b&auto=format&fit=crop&w=2305&q=80">
     </div>
+    <p class="banking"><h5>Virtual Real Estate Wholesaling In 30 Days</h5></p>
+    <p>A wholesalers Guide To Virtual Wholesaling Real Estate In 30 Days and Making 6 Figures</p>
     <div class="extra">
       Rating:
       <div class="ui star rating" data-rating="4"></div>
@@ -134,12 +176,16 @@
     <div class="image">
       <img src="https://images.unsplash.com/photo-1527664314633-df0074523476?ixlib=rb-0.3.5&s=0dbc529e0677915361e730a7601f7474&auto=format&fit=crop&w=1956&q=80" >
     </div>
+    <p class="banking"><h5>The Complete Guide To Multifamily Real Estate Investing</h5></p>
+    <p>The Step-By-Step Guide To Analyzing and Acquiring Multifamily Properties</p>
     <div class="extra">
       Rating:
       <div class="ui star rating" data-rating="4"></div>
     </div>
   </div>
 </div>
+<div class="ui clearing divider"></div><div class="ui clearing divider"></div>
+<div class="ui clearing divider"></div>
 <% end %>
 
 <script>
