@@ -1,0 +1,147 @@
+<% if !current_user %>
+  <div class="logo"><p><h1>How may we help you?</h1></p></div>
+  <div id="search_bar">
+    <div class="ui right aligned category search">
+      <div class="ui large icon input">
+        <input class="prompt" type="text" placeholder="Search For Courses">
+        <i class="search large icon"></i>
+      </div>
+      <div class="results"></div>
+    </div>
+  </div>
+  <div><p><h3 class="student">Student</h3></p></div>
+  
+  <div><p><h3 class="instructor">Instructor</h3></p></div>
+  <p><h3>Select a topic to search for help</h3></p>
+  <div class="ui three column divided grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui center aligned segment">
+        <i class="huge credit card icon"></i>
+        <p><h3>Payment</h3></p></br>
+        <p>Understand the revenue share and how to receive payment.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui center aligned segment">
+        <i class="huge laptop icon"></i>
+        <p><h3>Selling & Promotion </h3></p><br>
+        <p>Learn about the announcement and promotion tools.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui center aligned segment">
+        <i class="huge tasks icon"></i>
+        <p><h3>Quality Standards</h3></p>
+        <br><p>Learn what it takes to create a high quality course.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+         <div class="ui center aligned segment">
+         <i class="huge pencil alternate icon"></i>
+        <p><h3>Quality Standards</h3></p>
+        <p>Building your course curriculum and landing page.</p>
+        </div>
+      </div>
+      <div class="column">
+      <div class="ui center aligned segment">
+      <i class="huge file alternate outline icon"></i>
+     <p><h3>Course Managemen</h3></p></br>
+     <p>Maintain your course and engage with students.</p>
+     </div>
+   </div>
+      <div class="column">
+         <div class="ui center aligned segment">
+         <i class="huge shield alternate icon"></i>
+        <p><h3>Trust & Safety</h3></p></br>
+        <p>Policy and copyright questions and guidance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<% else %>
+
+<div class="ui four cards">
+  <div class="card">
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1527153818091-1a9638521e2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5fce4ce8856a711cc50a14e03e58783a&auto=format&fit=crop&w=2358&q=80">
+    </div>
+    <p class="banking"><h5>The Complete Investment Banking Course 2018</h5></p>
+    <p>The #1 Course to Land a Job in Investment Banking. IPOs, Bonds, M&A, Trading, LBOs, Valuation: Everything is included!</p>
+    <div class="extra">
+      Rating:
+      <div class="ui star rating" data-rating="4"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1521020773588-3b28297b1e70?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e0973395dd1655ea3b8fb83fa95c02c2&auto=format&fit=crop&w=2369&q=80">
+    </div>
+    <div class="extra">
+      Rating:
+      <div class="ui star rating" data-rating="2"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1530167916256-8ed31153f4b0?ixlib=rb-0.3.5&s=679e5b7afa6de4fbf847152e35d6e2f4&auto=format&fit=crop&w=1950&q=80">
+    </div>
+    <div class="extra">
+      Rating:
+      <div class="ui star rating" data-rating="3"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1518687560396-172a78aec156?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6ddc031f92185a88d4d1f3b7d5cb57&auto=format&fit=crop&w=2321&q=80">
+    </div>
+    <div class="extra">
+      Rating:
+      <div class="ui star rating" data-rating="4"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=14cc613995f60d89c4a908f3ea5c2409&auto=format&fit=crop&w=2274&q=80">
+    </div>
+    <div class="extra">
+      Rating:
+      <div class="ui star rating" data-rating="3"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-0.3.5&s=d8791fe0f9f4e735158400f9daf6a558&auto=format&fit=crop&w=1602&q=80" >
+    </div>
+    <div class="extra">
+      Rating:
+      <div class="ui star rating" data-rating="3"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1536917570556-14ebac23ddf4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea5877729a8ccedbf3ff10ea0292bd9b&auto=format&fit=crop&w=2305&q=80">
+    </div>
+    <div class="extra">
+      Rating:
+      <div class="ui star rating" data-rating="4"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1527664314633-df0074523476?ixlib=rb-0.3.5&s=0dbc529e0677915361e730a7601f7474&auto=format&fit=crop&w=1956&q=80" >
+    </div>
+    <div class="extra">
+      Rating:
+      <div class="ui star rating" data-rating="4"></div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<script>
+$(document).ready(function(){$(".rating").rating();});
+</script>
